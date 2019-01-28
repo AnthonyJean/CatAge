@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculez votre âge de chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlH-l0-VSw">
+                                <rect key="frame" x="20" y="54" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sae-oZ-Oln"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre âge" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2BR-Rb-vdD">
+                                <rect key="frame" x="20" y="114" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5kB-lQ-1DY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nt5-t7-NdT">
+                                <rect key="frame" x="132" y="164" width="150" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.29797145390000002" blue="0.27383836579999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1dW-Kj-OGe"/>
+                                    <constraint firstAttribute="height" constant="40" id="3nz-fv-G2G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calculer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f44-tp-sp6"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="F1r-Iv-vQA">
+                                <rect key="frame" x="0.0" y="299" width="414" height="597"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="WTp-c5-Efg">
+                                <rect key="frame" x="20" y="214" width="374" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="dBG-ka-AZY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.29797145388938839" blue="0.2738383657635336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pox-sz-QSS">
+                                <rect key="frame" x="359" y="807" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="4lL-rH-9bn"/>
+                                    <constraint firstAttribute="height" constant="35" id="d4Y-iN-uxg"/>
+                                </constraints>
+                                <state key="normal" image="son"/>
+                                <connections>
+                                    <action selector="soundAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THl-Is-XEK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pox-sz-QSS" secondAttribute="trailing" constant="20" id="18S-aN-pNO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WTp-c5-Efg" secondAttribute="trailing" constant="20" id="1F2-xW-amp"/>
+                            <constraint firstItem="2BR-Rb-vdD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="25b-qU-2Gn"/>
+                            <constraint firstItem="Nt5-t7-NdT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="781-Kg-HzL"/>
+                            <constraint firstItem="F1r-Iv-vQA" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="94Q-Av-LEk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YlH-l0-VSw" secondAttribute="trailing" constant="20" id="NqP-pm-54v"/>
+                            <constraint firstItem="F1r-Iv-vQA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OMo-JI-CuV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2BR-Rb-vdD" secondAttribute="trailing" constant="20" id="Q4x-kx-jEp"/>
+                            <constraint firstItem="YlH-l0-VSw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="QZT-TO-Xt4"/>
+                            <constraint firstItem="YlH-l0-VSw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VgO-fZ-qkp"/>
+                            <constraint firstItem="WTp-c5-Efg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vua-PU-de3"/>
+                            <constraint firstItem="Nt5-t7-NdT" firstAttribute="top" secondItem="2BR-Rb-vdD" secondAttribute="bottom" constant="20" id="cDS-pt-kON"/>
+                            <constraint firstItem="F1r-Iv-vQA" firstAttribute="top" secondItem="WTp-c5-Efg" secondAttribute="bottom" constant="10" id="eu6-aF-0VI"/>
+                            <constraint firstItem="WTp-c5-Efg" firstAttribute="top" secondItem="Nt5-t7-NdT" secondAttribute="bottom" constant="10" id="ff9-r8-lVL"/>
+                            <constraint firstItem="Nt5-t7-NdT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n5v-D2-bl7"/>
+                            <constraint firstItem="2BR-Rb-vdD" firstAttribute="top" secondItem="YlH-l0-VSw" secondAttribute="bottom" constant="20" id="oVF-Hp-bxR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pox-sz-QSS" secondAttribute="bottom" constant="20" id="uHF-f0-oqT"/>
+                            <constraint firstItem="F1r-Iv-vQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wqR-2y-wV2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="2BR-Rb-vdD" id="hdG-XL-BAn"/>
+                        <outlet property="resultLabel" destination="WTp-c5-Efg" id="IOF-92-7Ey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat" width="6000" height="4000"/>
+        <image name="son" width="51.200000762939453" height="51.200000762939453"/>
+    </resources>
+</document>
